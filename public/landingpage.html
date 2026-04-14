@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="./images/logo.png">
-  <title>EZ</title>
+  <title>寰宇云</title>
   <!-- 动态设置网站标题 -->
   <script>
     document.write('<script src="config.js?t=' + Math.random() + '"><\/script>');
     document.addEventListener('DOMContentLoaded', function() {
-      if (window.EZ_CONFIG && window.EZ_CONFIG.SITE_CONFIG && window.EZ_CONFIG.SITE_CONFIG.siteName) {
-        document.title = window.EZ_CONFIG.SITE_CONFIG.siteName;
+      if (window.寰宇云_CONFIG && window.寰宇云_CONFIG.SITE_CONFIG && window.寰宇云_CONFIG.SITE_CONFIG.siteName) {
+        document.title = window.寰宇云_CONFIG.SITE_CONFIG.siteName;
       }
     });
 
@@ -836,7 +836,7 @@
   <script>
     // 在DOM加载前预先应用主题，避免白屏闪烁
     (function() {
-      const THEME_STORAGE_KEY = 'ez-theme-preference';
+      const THEME_STORAGE_KEY = '寰宇云-theme-preference';
       const savedTheme = localStorage.getItem(THEME_STORAGE_KEY);
       const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
       const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
@@ -850,7 +850,7 @@
   <header>
     <div class="logo">
       <img src="./images/logo.png" alt="Logo">
-      <h1 id="siteName">EZ</h1>
+      <h1 id="siteName">寰宇云</h1>
     </div>
     <nav class="nav-links">
       <a href="#features">特性</a>
@@ -1053,7 +1053,7 @@
       <a href="#">常见问题</a>
       <a href="#">联系我们</a>
     </div>
-    <p class="copyright" id="copyrightText">© 2025 EZ THEME. All Rights Reserved.</p>
+    <p class="copyright" id="copyrightText">© 2025 寰宇云 THEME. All Rights Reserved.</p>
   </footer>
 
   <script>
@@ -1129,7 +1129,7 @@
     const themeToggle = document.getElementById('themeToggle');
     const mobileThemeToggle = document.getElementById('mobileThemeToggle');
     const root = document.documentElement;
-    const THEME_STORAGE_KEY = 'ez-theme-preference';
+    const THEME_STORAGE_KEY = '寰宇云-theme-preference';
     
     // 检查本地存储中的主题偏好
     function getThemePreference() {
@@ -1242,8 +1242,8 @@
     
     // 动态设置网站名称和版权信息
     document.addEventListener('DOMContentLoaded', function() {
-      if (window.EZ_CONFIG && window.EZ_CONFIG.SITE_CONFIG) {
-        const config = window.EZ_CONFIG;
+      if (window.寰宇云_CONFIG && window.寰宇云_CONFIG.SITE_CONFIG) {
+        const config = window.寰宇云_CONFIG;
         
         // 设置网站名称
         if (config.SITE_CONFIG.siteName) {
@@ -1307,7 +1307,7 @@
             // console.error('设置下载链接时出错:', error);
           }
         } else {
-          // console.warn('未找到客户端配置信息 (window.EZ_CONFIG.CLIENT_CONFIG)');
+          // console.warn('未找到客户端配置信息 (window.寰宇云_CONFIG.CLIENT_CONFIG)');
         }
         
         // 设置主题色
