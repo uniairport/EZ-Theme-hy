@@ -29,9 +29,7 @@ export const config  = {
         // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
         // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
         staticBaseUrl: [
-            'https://w5x8mu2a9943r.ezdemo.xyz/api/v1',
-            'https://skhsn6q4pnv95.ezdemo.xyz/api/v1',
-            'https://gy1v06omopzc8.ezdemo.xyz/api/v1'
+            'https://apiapi.huanyuyunvip.com/api/v1',
         ],
       
         // 自动获取模式配置 (urlMode = 'auto'时使用)
@@ -49,7 +47,7 @@ export const config  = {
 
     // 是否启用中间件代理API请求
     // 设置为true时，所有API请求将通过中间件转发
-    API_MIDDLEWARE_ENABLED: true,
+    API_MIDDLEWARE_ENABLED: false,
   
     //=======================================================
     // 中间件服务器URL (不含路径) 开源地址 https://github.com/codeman857/EZ-Encrypt-Middleware
@@ -66,10 +64,10 @@ export const config  = {
 
     // ====================  网站基础配置  ====================
     SITE_CONFIG: {
-        siteName: 'EZ THEME',
-        siteDescription: 'EZ UI',
+        siteName: '寰宇云',
+        siteDescription: '世界互联新体验',
         // copyright会自动使用当前年份
-        copyright: `© ${new Date().getFullYear()} EZ THEME. All Rights Reserved.`,
+        copyright: `© ${new Date().getFullYear()} HuanYuYun. All Rights Reserved.`,
 
         // 是否显示标题中的网站Logo (true=显示, false=隐藏)
         showLogo: true,
@@ -115,7 +113,7 @@ export const config  = {
         // 验证码相关配置
         verificationCode: {
             // 是否在发送验证码后显示检查垃圾邮件的提示 (true=显示, false=不显示)
-            showCheckSpamTip: true,
+            showCheckSpamTip: false,
 
             // 显示检查垃圾邮件提示的延迟时间(毫秒)
             checkSpamTipDelay: 1000
@@ -211,7 +209,7 @@ export const config  = {
             title: "用户须知",
 
             // 弹窗内容 (支持HTML)
-            content: "<p><strong>常规套餐默认每月订单日重置流量，您当月未用使用完的流量，不会累积到下个月</strong></p>",
+            content: "<p><strong>周期性套餐默认每月订单日重置流量，您当月未用使用完的流量，不会累积到下个月</strong></p>",
 
             // 冷却时间（小时），在此时间内不会再次显示弹窗
             cooldownHours: 0,
@@ -222,7 +220,7 @@ export const config  = {
     },
     ORDER_CONFIG: {
         // 下单前二次确认
-        confirmOrder: true,
+        confirmOrder: false,
         // 下单前二次确认内容
         confirmOrderContent: "<p><strong style='color: red'>无法提供相关教程和使用说明。</strong></p><p><strong style='color: red'>不会使用请勿购买，没有退款政策</strong></p>",
 
@@ -241,7 +239,7 @@ export const config  = {
         enableResetTraffic: true,
 
         // 重置流量按钮显示条件 ('always'=始终显示, 'low'=流量低于阈值时显示, 'depleted'=流量耗尽时显示)
-        resetTrafficDisplayMode: 'low',
+        resetTrafficDisplayMode: 'alwaya',
 
         // 低流量阈值百分比 (1-100)，当剩余流量百分比低于此值时触发低流量警告
         lowTrafficThreshold: 10,
@@ -260,7 +258,7 @@ export const config  = {
         // ===============================
 
         // 是否显示在线设备数量限制 (true=显示, false=隐藏，仅Xiao-V2board支持)
-        showOnlineDevicesLimit: true,
+        showOnlineDevicesLimit: false,
         
         // 是否显示导入订阅
         showImportSubscription: true,
@@ -272,30 +270,25 @@ export const config  = {
         showDownloadCard: true,
 
         // 平台显示控制 (true=显示, false=隐藏)
-        showIOS: true,
         showAndroid: true,
         showMacOS: true,
         showWindows: true,
-        showLinux: true,
-        showOpenWrt: true,
 
         // 客户端下载链接  //可以改成文档链接直接在新标签页打开
         clientLinks: {
-            ios: 'https://apps.apple.com/app/xxx',
-            android: 'https://play.google.com/store/apps/xxx',
+            android: 'http://38.147.163.207:5212/f/d/G3fL/HuanYuYun-1.0.0-android-x86_64.apk',
             macos: 'https://github.com/xxx/releases/latest',
-            windows: 'https://github.com/xxx/releases/latest',
-            linux: 'https://github.com/xxx/releases/latest',
-            openwrt: 'https://github.com/xxx/releases/latest'
+            windows: 'http://38.147.163.207:5212/f/d/DGt3/HuanYuYun-1.0.0-macos-universal.dmg',
+
         },
 
         // 订阅导入客户端显示控制 部分面板不支持SingBox导入请您注意检查
 
         // iOS平台
         showShadowrocket: true,
-        showSurge: true,
-        showStash: true,
-        showQuantumultX: true,
+        showSurge: false,
+        showStash: false,
+        showQuantumultX: false,
         showHiddifyIOS: true,
         showSingboxIOS: true,
         showLoon: true,
@@ -303,7 +296,7 @@ export const config  = {
         // Android平台客户端
         showFlClashAndroid: true,
         showV2rayNG: true,
-        showClashAndroid: true,
+        showClashAndroid: false,
         showSurfboard: true,
         showClashMetaAndroid: true,
         showNekobox: true,
@@ -313,7 +306,7 @@ export const config  = {
         // Windows平台客户端
         showFlClashWindows: true,
         showClashVergeWindows: true,
-        showClashWindows: true,
+        showClashWindows: false,
         showNekoray: true,
         showSingboxWindows: true,
         showHiddifyWindows: true,
@@ -321,12 +314,12 @@ export const config  = {
         // MacOS平台客户端
         showFlClashMac: true,
         showClashVergeMac: true,
-        showClashX: true,
+        showClashX: false,
         showClashMetaX: true,
-        showSurgeMac: true,
+        showSurgeMac: false,
         showStashMac: true,
-        showQuantumultXMac: true,
-        showSingboxMac: true,
+        showQuantumultXMac: false,
+        showSingboxMac: false,
         showHiddifyMac: true
     },
 
@@ -338,7 +331,7 @@ export const config  = {
         showGiftCardRedeem: false, // 只有Xiao-V2board支持礼品卡兑换
 
         // 是否显示最近登录设备栏目 (true=显示, false=隐藏)
-        showRecentDevices: true
+        showRecentDevices: false
     },
 
     // =======================================================
@@ -462,7 +455,7 @@ export const config  = {
     // 浏览器访问限制配置
     BROWSER_RESTRICT_CONFIG: {
         // 是否启用浏览器限制功能
-        enabled: true,
+        enabled: false,
 
         // 各浏览器是否被限制访问（true=限制访问，false=允许访问）
         restrictBrowsers: {
@@ -543,7 +536,7 @@ export const config  = {
         type: 'crisp',
 
         // 客服系统JS代码，请将您的客服系统提供的嵌入代码粘贴在这里
-        customHtml: '',
+        customHtml: '<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="928a5b84-a024-443a-a2f7-828a245e6d6a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>',
 
         // 客服系统嵌入模式: 'popup'=弹出式页面, 'embed'=嵌入到每个页面
         // 'popup'模式: 点击客服图标会跳转到单独的客服页面
