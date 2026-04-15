@@ -528,7 +528,7 @@ export const config  = {
     // 客服系统配置
     CUSTOMER_SERVICE_CONFIG: {
         // 是否启用客服系统
-        enabled: false,
+        enabled: true,
 
         // 客服系统类型: 'crisp' 或 'other'
         // 注意：当客服类型为crisp时，系统会自动向Crisp传递用户数据
