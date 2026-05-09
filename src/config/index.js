@@ -276,9 +276,9 @@ export const config  = {
 
         // 客户端下载链接  //可以改成文档链接直接在新标签页打开
         clientLinks: {
-            android: 'http://38.147.163.207:5212/f/d/G3fL/HuanYuYun-1.0.0-android-x86_64.apk',
-            macos: 'https://github.com/xxx/releases/latest',
-            windows: 'http://38.147.163.207:5212/f/d/DGt3/HuanYuYun-1.0.0-macos-universal.dmg',
+            android: 'http://38.207.133.250:5212/f/WeIB/HuanYuYun-1.0.0-android-x86_64.apk',
+            macos: 'http://38.207.133.250:5212/f/LXHo/HuanYuYun-1.0.0-macos-universal.dmg',
+            windows: 'http://38.207.133.250:5212/f/Yxs6/HuanYuYun-1.0.0-windows.exe',
 
         },
 
