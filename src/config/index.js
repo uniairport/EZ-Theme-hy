@@ -187,7 +187,7 @@ export const config  = {
         lowStockThreshold: 5,
 
         // 是否启用周期折扣计算显示 (true=启用, false=禁用)
-        enableDiscountCalculation: true, // 默认启用
+        enableDiscountCalculation: false, // 默认启用
 
         // 价格周期的显示顺序（从大到小）
         periodOrder: [
